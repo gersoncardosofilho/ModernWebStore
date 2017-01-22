@@ -1,4 +1,5 @@
-﻿using ModerWebStore.Domain.Enums;
+﻿using ModernWebStore.SharedKernel.Events;
+using ModerWebStore.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,20 +48,10 @@ namespace ModerWebStore.Domain.Entities
 
         public void AddItem(OrderItem item)
         {
-            if (item == null)
-            {
-                throw new Exception("Item inválido");
-            }
             if (item.Price <= 0)
             {
-                throw new Exception("Preço inválido");
+                
             }
-            if (item.Quantity <= 0)
-            {
-                throw new Exception("Quantidade inválida");
-            }
-
-            _orderItems.Add(item);
         }
 
     }

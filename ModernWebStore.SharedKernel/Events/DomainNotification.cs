@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModernWebStore.SharedKernel.Events.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ModernWebStore.SharedKernel.Events
 {
-    public class DomainNotification
+    public class DomainNotification : IDomainEvent
     {
         public string Key { get; private set; }
         public string Value { get; private set; }

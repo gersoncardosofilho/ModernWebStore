@@ -47,6 +47,18 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\EOrderStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scopes\CategoryScopes.cs" />
+    <Compile Include="Scopes\UserScopes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModernWebStore.SharedKernel\ModernWebStore.SharedKernel.csproj">
+      <Project>{065ccabd-98e9-4ed6-90a6-979c6a02859e}</Project>
+      <Name>ModernWebStore.SharedKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Diagram\ModernWebStoreDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
