@@ -40,6 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CategoryCommands\CreateCategoryCommand.cs" />
+    <Compile Include="Commands\CategoryCommands\DeleteCategoryCommand.cs" />
+    <Compile Include="Commands\CategoryCommands\EditCategoryCommand.cs" />
+    <Compile Include="Commands\OrderCommands\CreateOrderCommand.cs" />
+    <Compile Include="Commands\OrderCommands\CreateOrderItemCommand.cs" />
+    <Compile Include="Commands\ProductCommands\CreateProductCommand.cs" />
+    <Compile Include="Commands\ProductCommands\UpdateProductInfoCommand.cs" />
+    <Compile Include="Commands\UserCommands\RegisterUserCommands.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderItem.cs" />
@@ -52,6 +60,9 @@
     <Compile Include="Scopes\OrderScopes.cs" />
     <Compile Include="Scopes\ProductScopes.cs" />
     <Compile Include="Scopes\UserScopes.cs" />
+    <Compile Include="Specs\OrderSpecs.cs" />
+    <Compile Include="Specs\ProductSpecs.cs" />
+    <Compile Include="Specs\UserSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModernWebStore.SharedKernel\ModernWebStore.SharedKernel.csproj">
@@ -59,7 +70,6 @@
       <Name>ModernWebStore.SharedKernel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Diagram\ModernWebStoreDiagram.cd" />
   </ItemGroup>

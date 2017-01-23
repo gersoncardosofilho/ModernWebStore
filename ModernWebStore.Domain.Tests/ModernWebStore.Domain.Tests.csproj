@@ -56,6 +56,8 @@
     <Compile Include="Scope\CategoryScopeTests.cs" />
     <Compile Include="Scope\ProductScopeTests.cs" />
     <Compile Include="Scope\UserScopeTests.cs" />
+    <Compile Include="Specs\ProductSpecsTests.cs" />
+    <Compile Include="Specs\UserSpecsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModernWebStore.SharedKernel\ModernWebStore.SharedKernel.csproj">
