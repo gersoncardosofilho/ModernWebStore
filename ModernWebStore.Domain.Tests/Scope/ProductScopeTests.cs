@@ -31,35 +31,35 @@ namespace ModernWebStore.Domain.Tests.Scope
         [TestCategory("Product")]
         public void ProductWithNoTitle()
         {
-            Assert.AreEqual(true, ProductScopes.RegisterProductScopeIsValid(_invalidProductTitle));
+            Assert.AreEqual(false, ProductScopes.RegisterProductScopeIsValid(_invalidProductTitle));
         }
 
         [TestMethod]
         [TestCategory("Product")]
         public void ProductWithNoDescription()
         {
-            Assert.AreEqual(true, ProductScopes.RegisterProductScopeIsValid(_invalidProductDescription));
+            Assert.AreEqual(false, ProductScopes.RegisterProductScopeIsValid(_invalidProductDescription));
         }
 
         [TestMethod]
         [TestCategory("Product")]
         public void ProductWithNoPrice()
         {
-            Assert.AreEqual(true, ProductScopes.RegisterProductScopeIsValid(_invalidProductPrice));
+            Assert.AreEqual(false, ProductScopes.RegisterProductScopeIsValid(_invalidProductPrice));
         }
 
         [TestMethod]
         [TestCategory("Product")]
         public void ProductWithNoQuantity()
         {
-            Assert.AreEqual(true, ProductScopes.RegisterProductScopeIsValid(_invalidProductQuantity));
+            Assert.AreEqual(false, ProductScopes.RegisterProductScopeIsValid(_invalidProductQuantity));
         }
 
         [TestMethod]
         [TestCategory("Product")]
         public void ProductWithNoCategory()
         {
-            Assert.AreEqual(true, ProductScopes.RegisterProductScopeIsValid(_invalidProductCategory));
+            Assert.AreEqual(false, ProductScopes.RegisterProductScopeIsValid(_invalidProductCategory));
         }
     }
 }

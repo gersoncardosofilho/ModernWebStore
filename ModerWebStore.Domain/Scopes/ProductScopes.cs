@@ -14,8 +14,8 @@ namespace ModerWebStore.Domain.Scopes
         {
             return AssertionConcern.IsSatisfiedBy
                 (
-                    AssertionConcern.AssertNotNull(product.Title, "O título do produto é obrigatório"),
-                    AssertionConcern.AssertNotNull(product.Description, "A descrição do produto é obrigatória"),
+                    AssertionConcern.AssertNotEmpty(product.Title, "O título do produto é obrigatório"),
+                    AssertionConcern.AssertNotEmpty(product.Description, "A descrição do produto é obrigatória"),
                     AssertionConcern.AssertIsGreaterThan(product.Price, 0, "O preço do produto não pode ser zero"),
                     AssertionConcern.AssertIsGreaterThan(product.CategoryId, 0, "A categoria do produtro é obrigatória"),
                     AssertionConcern.AssertIsGreaterThan(product.QuantityOnHand, 0 , "A quantidade do produto não pode ser zero")
