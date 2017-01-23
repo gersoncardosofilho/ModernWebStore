@@ -1,5 +1,5 @@
-﻿using ModernWebStore.SharedKernel.Events;
-using ModerWebStore.Domain.Enums;
+﻿using ModerWebStore.Domain.Enums;
+using ModerWebStore.Domain.Scopes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace ModerWebStore.Domain.Entities
 
         public int Id { get; private set; }
         public DateTime OrderDate { get; private set; }
-        public IEnumerable<OrderItem> OrderItems
+        public ICollection<OrderItem> OrderItems
         {
             get { return _orderItems; }
             private set { _orderItems = new List<OrderItem>(value); }
@@ -48,12 +48,31 @@ namespace ModerWebStore.Domain.Entities
 
         public void AddItem(OrderItem item)
         {
-            if (item.Price <= 0)
-            {
-                
-            }
+            if (item.Register())
+                _orderItems.Add(item);
         }
 
+        public void Place()
+        {
+            if (!this.PlaceOrderScopeIsValid())
+                return;
+        }
+
+        public void MarkAsPaid()
+        {
+            //Baixa no estoque
+            this.Status = EOrderStatus.Paid;
+        }
+
+        public void MarkAsDelivered()
+        {
+            this.Status = EOrderStatus.Delivered;
+        }
+
+        public void Cancel()
+        {
+            this.Status = EOrderStatus.Cancelled;
+        }
     }
 
 }
