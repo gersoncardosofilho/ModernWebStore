@@ -66,6 +66,8 @@
     <Compile Include="Scopes\UserScopes.cs" />
     <Compile Include="Services\ICategoryApplicationService.cs" />
     <Compile Include="Services\IOrderApplicationService.cs" />
+    <Compile Include="Services\IProductApplicationService.cs" />
+    <Compile Include="Services\IUserApplicationService.cs" />
     <Compile Include="Specs\OrderSpecs.cs" />
     <Compile Include="Specs\ProductSpecs.cs" />
     <Compile Include="Specs\UserSpecs.cs" />
