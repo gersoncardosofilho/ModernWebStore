@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.Domain.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.SharedKernel", "ModernWebStore.SharedKernel\ModernWebStore.SharedKernel.csproj", "{065CCABD-98E9-4ED6-90A6-979C6A02859E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Infrastructure", "4 Infrastructure", "{4174ED54-24E3-4D46-BE45-A28B53D0213B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.Infra", "ModernWebStore.Infra\ModernWebStore.Infra.csproj", "{9D89F710-EF46-4F71-A85C-01E251D9816B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{065CCABD-98E9-4ED6-90A6-979C6A02859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{065CCABD-98E9-4ED6-90A6-979C6A02859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{065CCABD-98E9-4ED6-90A6-979C6A02859E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +47,6 @@ Global
 		{8A98B9E1-5922-49FE-A775-69181506DC9D} = {29161A57-6858-4C07-9F3B-8C8AC3510800}
 		{370A3065-E11B-41FB-A672-D4B8480AF224} = {5C4CFBB3-B463-4324-8EDE-46363E96E379}
 		{065CCABD-98E9-4ED6-90A6-979C6A02859E} = {29161A57-6858-4C07-9F3B-8C8AC3510800}
+		{9D89F710-EF46-4F71-A85C-01E251D9816B} = {4174ED54-24E3-4D46-BE45-A28B53D0213B}
 	EndGlobalSection
 EndGlobal
