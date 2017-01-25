@@ -16,6 +16,5 @@ namespace ModerWebStore.Domain.Services
         void Pay(int id, string email);
         void Delivery(int id, string email);
         void Cancel(int id, string email);
-
     }
 }

@@ -20,7 +20,7 @@ namespace ModerWebStore.Domain.Specs
             return x => x.User.Email == email && x.Status == Enums.EOrderStatus.Paid;
         }
 
-        public static Expression<Func<Order, bool>> GetdeliveredOrders(string email)
+        public static Expression<Func<Order, bool>> GetDeliveredOrders(string email)
         {
             return x => x.User.Email == email && x.Status == Enums.EOrderStatus.Delivered;
         }
