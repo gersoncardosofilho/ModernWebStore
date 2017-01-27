@@ -13,9 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.Domain.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.SharedKernel", "ModernWebStore.SharedKernel\ModernWebStore.SharedKernel.csproj", "{065CCABD-98E9-4ED6-90A6-979C6A02859E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Infrastructure", "4 Infrastructure", "{4174ED54-24E3-4D46-BE45-A28B53D0213B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{4174ED54-24E3-4D46-BE45-A28B53D0213B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.Infra", "ModernWebStore.Infra\ModernWebStore.Infra.csproj", "{9D89F710-EF46-4F71-A85C-01E251D9816B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application Service", "2 - Application Service", "{58BE9F4B-4A6B-44B9-9921-74866211BCD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernWebStore.ApplicationService", "ModernWebStore.ApplicationService\ModernWebStore.ApplicationService.csproj", "{B3419A1B-4AB6-45CC-A2E9-3F797A153736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D89F710-EF46-4F71-A85C-01E251D9816B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3419A1B-4AB6-45CC-A2E9-3F797A153736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3419A1B-4AB6-45CC-A2E9-3F797A153736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3419A1B-4AB6-45CC-A2E9-3F797A153736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3419A1B-4AB6-45CC-A2E9-3F797A153736}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +56,6 @@ Global
 		{370A3065-E11B-41FB-A672-D4B8480AF224} = {5C4CFBB3-B463-4324-8EDE-46363E96E379}
 		{065CCABD-98E9-4ED6-90A6-979C6A02859E} = {29161A57-6858-4C07-9F3B-8C8AC3510800}
 		{9D89F710-EF46-4F71-A85C-01E251D9816B} = {4174ED54-24E3-4D46-BE45-A28B53D0213B}
+		{B3419A1B-4AB6-45CC-A2E9-3F797A153736} = {58BE9F4B-4A6B-44B9-9921-74866211BCD9}
 	EndGlobalSection
 EndGlobal

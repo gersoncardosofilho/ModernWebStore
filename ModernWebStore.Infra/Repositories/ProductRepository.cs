@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ModerWebStore.Domain.Entities;
 using ModernWebStore.Infra.DataContext;
+using ModerWebStore.Domain.Specs;
+using System.Data.Entity;
 
 namespace ModernWebStore.Infra.Repositories
 {
@@ -20,42 +22,52 @@ namespace ModernWebStore.Infra.Repositories
 
         public void Create(Product product)
         {
-            throw new NotImplementedException();
+            _context.Products.Add(product);
         }
 
         public void Delete(Product product)
         {
-            throw new NotImplementedException();
+            _context.Products.Remove(product);
         }
 
         public List<Product> Get()
         {
-            throw new NotImplementedException();
+            return _context.Products.ToList();
         }
 
         public Product Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.Products.Find(id);
         }
 
         public List<Product> Get(int skip, int take)
         {
-            throw new NotImplementedException();
+            return _context
+                .Products
+                .OrderBy(x => x.Title)
+                .Skip(skip)
+                .Take(take)
+                .ToList();
         }
 
         public List<Product> GetProductInStock()
         {
-            throw new NotImplementedException();
+            return _context.Products
+                        .Where(ProductSpecs.GetProductsInStock())
+                        .ToList();
+                    
         }
 
         public List<Product> GetProductOutOfStock()
         {
-            throw new NotImplementedException();
+            return _context.Products
+                        .Where(ProductSpecs.GetProductsOutOfStock())
+                       .ToList();
         }
 
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            _context.Entry<Product>(product).State = EntityState.Modified;
         }
     }
 }
